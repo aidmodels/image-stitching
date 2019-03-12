@@ -2,6 +2,7 @@ import zipfile
 import uuid
 import os
 from cvpm.solver import Solver
+from cvpm.utility import save_image
 from pystitch.pystitch import warmUp
 from pystitch.process import automatic
 
@@ -20,5 +21,6 @@ class ImageStitchSolver(Solver):
         zip_ref.extractall(project_folder)
         zip_ref.close()
         ## Workflow
-        automatic(project_folder, config['suffix'], project_id + '.pto')
-        
+        automatic(project_folder, config['suffix'], project_id, project_id + '.pto')
+        filename = save_image(project_id + '.jpg', project_id + '.jpg')
+        return filename
