@@ -1,0 +1,6 @@
+[package]
+name="Image_Stitching"
+
+[[solvers]]
+name="Image_Stitching"
+class="image_stitching/solver/ImageStitchSolver"
