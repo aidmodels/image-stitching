@@ -3,8 +3,8 @@ import uuid
 import os
 from cvpm.solver import Solver
 from cvpm.utility import save_image
-from pystitch.pystitch import warmUp
-from pystitch.process import automatic
+from stitchpy.pystitch import warmUp
+from stitchpy.process import automatic
 
 class ImageStitchSolver(Solver):
     def __init__(self, toml_file=None):
