@@ -1,1 +1,1 @@
-pystitch
+stitchpy
